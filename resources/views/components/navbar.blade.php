@@ -7,23 +7,23 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="p nav-link" href="{{route('homepage')}}">Home</a>
+          <a class="p nav-link text-primary" href="{{route('homepage')}}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="p nav-link" href="">Collabora con noi</a>
+          <a class="p nav-link text-primary" href="">Collabora con noi</a>
         </li>
         <li class="nav-item">
-          <a class="p nav-link" href="">La nostra storia</a>
+          <a class="p nav-link text-primary" href="">La nostra storia</a>
         </li>
         <li class="nav-item">
-          <a class="p nav-link" href="">Tutti i film</a>
+          <a class="p nav-link text-primary" href="{{route('products.index')}}">Tutti i film</a>
         </li>
             @guest
             <li class="nav-item">
-              <a class="p nav-link" href="{{route('login')}}">Accedi</a>
+              <a class="p nav-link text-primary" href="{{route('login')}}">Accedi</a>
             </li>
             <li class="nav-item">
-              <a class="p nav-link" href="{{route('register')}}">Registrati</a>
+              <a class="p nav-link text-primary" href="{{route('register')}}">Registrati</a>
             </li>
             @endguest
             @auth
@@ -33,7 +33,7 @@
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
                 <li class="nav-item">
-                  <a class="nav-link" href="">Inserisci Film</a>
+                  <a class="nav-link" href="{{route('products.create')}}">Inserisci Film</a>
                 </li>
                 <li><hr class="dropdown-divider"></li>
                 <li><form action="{{route('logout')}}" method="POST">

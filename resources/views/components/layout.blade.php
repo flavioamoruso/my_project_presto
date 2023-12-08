@@ -18,10 +18,9 @@
 <body class="bg-site">
    
    <x-navbar/> 
-    <div class="min-vh-100">
-        {{$slot}}
-    </div>
     
-    <x-footer/>
+        {{$slot}}
+    
+    
 </body>
 </html>

@@ -4,7 +4,7 @@
 • [x] Bootstrap + Vite
 - [x] Creazione del PublicController
 - [x] Installazione e Integrazione Fortify
-- [] Creazione Modello + Migrazione + Controller
+- [x] Creazione Modello + Migrazione + Controller
 • [] Definisco una relazione One-to-Many (?)
 - [] Modello do mettere in relazione + Migrazione
 - [] Creazione controller (?)
