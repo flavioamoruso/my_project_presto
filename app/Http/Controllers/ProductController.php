@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use App\Http\Requests\ProductCreateRequest;
 
 class ProductController extends Controller
 {
@@ -30,15 +33,28 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('products.create');
+        $categories=Category::all();
+        return view('products.create',
+        compact('categories'));
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(ProductCreateRequest $request)
     {
-        //
+        // dd($request->all());
+
+        $product=Product::create([
+            'title'=>$request->title,
+            'price'=>$request->price,
+            'body'=>$request->body,
+            'user_id'=>Auth::id(),
+            'category_id'=>$request->category
+        ]);
+
+        return redirect(route('products.create'))->with('message','Complimenti hai inserito un film');
+
     }
 
     /**

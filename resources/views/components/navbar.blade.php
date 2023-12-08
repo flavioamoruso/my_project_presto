@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container-fluid">
-    <a class="text-decoration mr-5" href="{{route('homepage')}}"><h2 class="p-4">Il Grande Cinema</h2></a>
+    <a class="text-decoration mr-5" href="{{route('homepage')}}"><h2 class="p-2 text-white">Il Grande Cinema</h2></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -28,7 +28,7 @@
             @endguest
             @auth
             <li class="nav-item dropdown me-3 p">
-              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle text-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Benvenuto {{Auth::user()->name}}
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
@@ -49,44 +49,3 @@
     </div>
   </div>
 </nav>
-
-
-
-
-
-
-
-
-{{-- <div class="nav">
-  <input type="checkbox" id="nav-check">
-  <div class="nav-header">
-    <div class="nav-title">
-      <a class="text-decoration" href="{{route('homepage')}}"><h4>Il Grande Cinema</h4></a>
-    </div>
-  </div>
-  <div class="nav-btn">
-    <label for="nav-check">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-  </div>
-  
-  <div class="nav-links">
-    <a class="p" href="{{route('homepage')}}">Home</a>
-    <a class="p" href="">Collabora con noi</a>
-    <a class="p" href="">La nostra storia</a>
-    <a class="p" href="">Tutti i film</a>
-    @guest
-    <a class="p" href="{{route('login')}}">Accedi</a>
-    <a class="p" href="{{route('register')}}">Registrati</a>
-    @endguest
-    @auth
-    <a href=""><form action="{{route('logout')}}" method="POST">
-      @csrf
-      <button class="p logout" type="submit">Logout</button>
-    </form></a>
-    <a class="p me-auto" href="">Benvenuto {{Auth::user()->name}}</a>
-    @endauth
-  </div>
-</div> --}}
