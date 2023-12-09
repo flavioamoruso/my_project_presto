@@ -13,6 +13,12 @@
 }
 
 
+.sfondo{
+  background: linear-gradient(45deg,rgb(62, 62, 62),transparent),url(/public/img/sfondo.jpg);
+  background-position: center;
+  background-size: contain;
+}
+
 .text-decoration{
     text-decoration: none;
 }

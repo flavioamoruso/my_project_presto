@@ -1,12 +1,12 @@
 <x-layout>
-    <div class="container-fluid my-5 py-5">
+    <div class="container-fluid mt-5 pt-5">
         <div class="row text-center">
             <div class="col-12">
-                <h1>Compila il form!</h1>
+                <h1 class="text-warning">Compila il form!</h1>
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container mt-3">
         <div class="row justify-content-center">
             <div class="col-12 d-flex justify-content-center">
                 <div class="form-container">

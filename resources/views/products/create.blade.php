@@ -22,7 +22,7 @@
             </select>
             <div class="mb-3">
               <label for="floatingTextarea" class="text-white"><h6>Descrizione</h6></label>
-              <textarea name="body" class="form-control" placeholder="" id="floatingTextarea"></textarea>
+              <textarea name="body" class="form-control text-white" placeholder="" id="floatingTextarea"></textarea>
             </div>
             <button class="button" type="submit">
               Invia
