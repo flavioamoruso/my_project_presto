@@ -17,6 +17,8 @@ use App\Http\Controllers\PubblicController;
 
 Route::get('/',[PubblicController::class,'homepage'])->name('homepage');
 
+Route::get('/contactUs/work',[PubblicController::class,'contactUs'])->name('contactUs');
+
 Route::get('/products/index',[ProductController::class,'index'])->name('products.index');
 
 Route::get('/products/create',[ProductController::class,'create'])->name('products.create');

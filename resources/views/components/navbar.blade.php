@@ -10,7 +10,7 @@
           <a class="p nav-link text-primary" href="{{route('homepage')}}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="p nav-link text-primary" href="">Collabora con noi</a>
+          <a class="p nav-link text-primary" href="{{route('contactUs')}}">Collabora con noi</a>
         </li>
         <li class="nav-item">
           <a class="p nav-link text-primary" href="">La nostra storia</a>

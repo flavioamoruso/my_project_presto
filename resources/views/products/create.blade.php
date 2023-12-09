@@ -1,5 +1,5 @@
 <x-layout>
-  <div class="container-fluid mt-5 pt-5">
+  <div class="container-fluid my-5 py-5">
     <div class="row">
       <div class="col-12 col-md-6">
         <div class="login-box">
@@ -35,12 +35,21 @@
       </div>
     </div>
   </div>
-
-  @if (session('message'))
-    <div class="alert alert-success">
-        {{ session('message') }}
+  
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-12">
+        
+        @if (session('message'))
+        <div class="alert alert-primary">
+          {{ session('message') }}
+        </div>
+        @endif
+        
+        
+      </div>
     </div>
-@endif
-
-
+  </div>
+  
+  
 </x-layout>

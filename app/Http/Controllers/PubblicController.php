@@ -10,4 +10,15 @@ class PubblicController extends Controller
     public function homepage() {
         return view('welcome');
     }
+
+
+    public function contactUs(){
+        return view('contactUs');
+    }
+
+
+
+
 }
+
+
