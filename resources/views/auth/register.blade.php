@@ -1,52 +1,33 @@
 <x-layout>
-  
-
-    
-    <div class="container-fluid mt-5 pt-5">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <div class="login-box">
-            <p class="p">Registrati</p>
-            <form method="POST" action="{{route('register')}}">
-              @csrf
-              <div class="user-box">
-                <input name="email" type="text" class="@error('email') is-invalid @enderror">
-                @error('email')
-                <div class="text-danger p mb-3">*{{ $message }}</div>
-                @enderror
-                <label>Email</label>
-              </div>
-              <div class="user-box">
-                <input name="name" type="text" class="@error('name') is-invalid @enderror">
-                @error('name')
-                <div class="text-danger p mb-3">*{{ $message }}</div>
-                @enderror
-                <label>Nome</label>
-              </div>
-              <div class="user-box">
-                <input name="password" type="password" class="@error('password') is-invalid @enderror">
-                @error('password')
-                <div class="text-danger p mb-3">*{{ $message }}</div>
-                @enderror
-                <label>Password</label>
-              </div>
-              <div class="user-box">
-                <input name="password_confirmation" type="password" class="@error('password_confirmation') is-invalid @enderror">
-                @error('password_confirmation')
-                <div class="text-danger p mb-3">*{{ $message }}</div>
-                @enderror
-                <label>Conferma Password</label>
-              </div>
-              <button class="button" type="submit">
-                Invia
-                <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
-                  <path clip-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" fill-rule="evenodd"></path>
-                </svg>
-              </button>
-            </form>
-            <p class="text-white a2">Hai già un account?<a href="{{route('login')}}" class="a2">Fai il login!</a></p>
-          </div>
+    <div class="container-fluid sfondo-auth vh-100">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center mt-5">
+                <div class="form-container">
+                    <h3 class="title">Registrati</h3>
+                    <form class="form">
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="">
+                        </div>
+                        <div class="input-group">
+                            <label for="username">Username</label>
+                            <input type="text" name="name" id="username" placeholder="">
+                        </div>
+                        <div class="input-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" placeholder="">
+                        </div>
+                        <div class="input-group">
+                            <label for="password">Conferma Password</label>
+                            <input type="password" name="password_confirmation" id="password" placeholder="">
+                        </div>
+                        <button class="sign my-4">Sign in</button>
+                    </form>
+                    <p class="signup">Don't have an account?
+                        <a rel="noopener noreferrer" href="#" class="">Sign up</a>
+                    </p>
+                </div>
+            </div>
         </div>
       </div>
-    </div>
-  </x-layout>
+</x-layout>

@@ -15,9 +15,29 @@
 }
 
 .header{
-  background-image: linear-gradient(rgb(50, 54, 159),transparent,rgb(158, 159, 235)),url(/public/img/header.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 550px;
+  background-image:url(/public/img/header.jpg);
+  background-position: center top;
+  background-size: contain;
+}
+
+
+/* button */
+.btn{
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  color: white;
+}
+
+.btn-gradient{
+  background: linear-gradient(45deg,rgb(193, 180, 96),rgb(223, 221, 60));
+  background-size: 300%;
+}
+
+.btn-gradient:hover{
+background-size: 100%;
+transform: scale(1.08);
+transition: 0.5s;
 }
 
