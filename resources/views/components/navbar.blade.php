@@ -9,6 +9,17 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link p" href="{{route('homepage')}}">Home</a></li>
+          <div class="btn-group">
+            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categorie
+            </button>
+            <ul class="dropdown-menu">
+              @foreach($categories as $category)
+              <li><a class="dropdown-item" href="{{route('categoryShow',compact('category'))}}">
+              {{$category->name}}</a></li>
+              @endforeach
+            </ul>
+          </div>
           <li class="nav-item"><a class="nav-link p" href="">La nostra storia</a></li>
           <li class="nav-item"><a class="nav-link p" href="{{route('contactUs')}}">Collabora con noi</a></li>
           <li class="nav-item"><a class="nav-link p" href="{{route('products.index')}}">Tutti i film</a></li>
@@ -26,7 +37,7 @@
                 <li><a class="dropdown-item" href="{{route('products.create')}}">Inserisci film</a></li>
                 <li><form action="{{route('logout')}}" method="POST">
                   @csrf
-                  <button type="submit">Logout</button>
+                  <button class="nav-link" type="submit">Logout</button>
                 </form></li>
               </ul>
             </li>

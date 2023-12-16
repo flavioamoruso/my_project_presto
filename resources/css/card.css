@@ -103,14 +103,14 @@
 }
 
 .card-int__button::before {
-  content: 'More for this article';
+  content: 'Vai ai dettagli';
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  background: #a62a00;
-  background: linear-gradient(315deg, #ff7d7d, #a62a00);
+  background:var(--four);
+  background:var(--four);
   width: 100%;
   height: 100%;
   top: 0;

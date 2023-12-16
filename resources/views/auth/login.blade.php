@@ -4,7 +4,8 @@
         <div class="col-12 d-flex justify-content-center mt-5">
             <div class="form-container">
                 <h3 class="title">Accedi</h3>
-                <form class="form">
+                <form class="form" method="POST" action="{{route('products.login')}}">
+                    @csrf
                     <div class="input-group">
                         <label for="username">Username</label>
                         <input type="text" name="username" id="username" placeholder="">

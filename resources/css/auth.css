@@ -5,6 +5,12 @@
     padding: 2rem;
     color: rgba(243, 244, 246, 1);
   }
+
+  .category-padding{
+    padding: 15px;
+    background-color: rgba(17, 24, 39, 1);
+    color: rgba(243, 244, 246, 1);
+  }
   
   .title {
     text-align: center;

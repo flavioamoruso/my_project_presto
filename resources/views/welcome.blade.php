@@ -10,4 +10,21 @@
       </div>
     </div>
   </div>
+  
+  <div class="container mt-5">
+    <div class="row justify-content-around text-center">
+      <div class="col-12">
+        <h3>Film recenti</h3>
+      </div>
+        @foreach($products as $product)
+        <div class="col-10 col-md-3 my-3 mx-3">
+            <x-card
+            
+            :product="$product"
+            
+            />
+        </div>
+        @endforeach
+    </div>
+</div>
 </x-layout>

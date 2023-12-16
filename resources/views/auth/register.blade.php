@@ -4,7 +4,8 @@
             <div class="col-12 d-flex justify-content-center mt-5">
                 <div class="form-container">
                     <h3 class="title">Registrati</h3>
-                    <form class="form">
+                    <form class="form" method="POST" action="{{route('register')}}">
+                        @csrf
                         <div class="input-group">
                             <label for="email">Email</label>
                             <input type="email" name="email" id="email" placeholder="">

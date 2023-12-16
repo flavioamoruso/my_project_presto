@@ -1,5 +1,101 @@
 <x-layout>
-  <div class="container-fluid my-5 py-5">
+
+
+  <div class=" sfondo-auth mb-0">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12">
+          
+          @if (session('message'))
+          <div class="alert alert-warning">
+            {{ session('message') }}
+          </div>
+          @endif
+          
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid vh-100">
+      <div class="row">
+          <div class="col-12 d-flex justify-content-center mt-5">
+              <div class="form-container p-3">
+                  <h3 class="title">Inserisci film</h3>
+                  <form class="form" method="POST" action="{{route('products.store')}}">
+                      @csrf
+                      <div class="input-group">
+                          <label for="title">Titolo</label>
+                          <input type="text" name="title">
+                      </div>
+                      <div class="input-group">
+                          <label for="price">Prezzo</label>
+                          <input type="number" name="price">
+                      </div>
+                      <select class="form-select my-4 category-padding text-secondary" name="category" aria-label="Default select example">
+                        <option selected>Categoria</option>
+                        @foreach($categories as $category)
+                        <option value="{{$category->id}}">{{$category->name}}</option>
+                        @endforeach
+                      </select>
+                      <div class="mb-3">
+                        <label for="floatingTextarea" class="text-white"><h6>Descrizione</h6></label>
+                        <textarea name="body" class="form-control text-dark category-padding" placeholder=""></textarea>
+                      </div>
+                      <div class="input-group">
+                        <label for="img">Inserisci immagine</label>
+                        <input class="category-padding" type="file" name="img">
+                    </div>
+                      <button class="sign my-4">Inserisci annunci</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {{-- <div class="container-fluid my-5 py-5">
     <div class="row">
       <div class="col-12 col-md-6">
         <div class="login-box">
@@ -36,7 +132,7 @@
     </div>
   </div>
   
-  <div class="container">
+   {{-- <div class="container">
     <div class="row text-center">
       <div class="col-12">
         
@@ -49,7 +145,7 @@
         
       </div>
     </div>
-  </div>
+  </div> --}}
   
   
 </x-layout>

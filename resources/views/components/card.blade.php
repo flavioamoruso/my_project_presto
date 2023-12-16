@@ -7,6 +7,7 @@
   <div class="card-int">
     <p class="card-int__title mt-2">{{$product->title}}</p>
     <p class="excerpt">{{$product->body}}</p>
+    <p class="card-footer">Inserito il {{$product->created_at->format('d/m/Y')}}</p>
     <button class="card-int__button">Mostra</button>
   </div>
 </div>
