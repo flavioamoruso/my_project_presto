@@ -1,7 +1,7 @@
 <x-layout>
 
 
-  <div class=" sfondo-auth mb-0">
+  <div class="sfondo-auth mb-0">
     <div class="container">
       <div class="row text-center">
         <div class="col-12">
@@ -40,7 +40,7 @@
                       </select>
                       <div class="mb-3">
                         <label for="floatingTextarea" class="text-white"><h6>Descrizione</h6></label>
-                        <textarea name="body" class="form-control text-dark category-padding" placeholder=""></textarea>
+                        <textarea name="body" class="form-control text-warning category-padding" placeholder=""></textarea>
                       </div>
                       <div class="input-group">
                         <label for="img">Inserisci immagine</label>

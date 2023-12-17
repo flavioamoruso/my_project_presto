@@ -10,7 +10,7 @@
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link p" href="{{route('homepage')}}">Home</a></li>
           <div class="btn-group">
-            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="dropdown-toggle btn btn-dark text-warning" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               Categorie
             </button>
             <ul class="dropdown-menu">
@@ -37,7 +37,7 @@
                 <li><a class="dropdown-item" href="{{route('products.create')}}">Inserisci film</a></li>
                 <li><form action="{{route('logout')}}" method="POST">
                   @csrf
-                  <button class="nav-link" type="submit">Logout</button>
+                  <li><a class="dropdown-item" href="">Logout</a></li>
                 </form></li>
               </ul>
             </li>

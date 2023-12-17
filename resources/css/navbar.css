@@ -1,3 +1,7 @@
 .bg-nav{
     background-color: var();
 }
+
+.z-index{
+    z-index: 9999;
+}

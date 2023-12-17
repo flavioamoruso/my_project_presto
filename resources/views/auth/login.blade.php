@@ -4,11 +4,11 @@
         <div class="col-12 d-flex justify-content-center mt-5">
             <div class="form-container">
                 <h3 class="title">Accedi</h3>
-                <form class="form" method="POST" action="{{route('products.login')}}">
+                <form class="form" method="POST" action="{{route('login')}}">
                     @csrf
                     <div class="input-group">
-                        <label for="username">Username</label>
-                        <input type="text" name="username" id="username" placeholder="">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="">
                     </div>
                     <div class="input-group">
                         <label for="password">Password</label>

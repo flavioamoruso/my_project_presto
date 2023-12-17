@@ -9,16 +9,16 @@
     </div>
     
     
-    <div class="container mt-2">
+    <div class="container mt-3">
         <div class="row justify-content-around text-center">
                     @forelse($category->products as $product)
-                    <div class="col-12 col-md-3">
+                    <div class="col-10 col-md-3 my-3 mx-3">
                         <x-card :product="$product"/>
                     </div>
                         @empty
                         <div class="col-12">
-                            <p>Non sono presenti annunci per questa categoria</p>
-                            <p>Pubblicane uno : <a href="{{route('products.create')}}" class="btn btn-gradient">Nuovo annuncio</a> </p>
+                            <p>Non sono presenti film per questa categoria</p>
+                            <p>Inseriscine uno : <a href="{{route('products.create')}}" class="btn btn-gradient">Nuovo annuncio</a> </p>
                         </div>
                         @endforelse
         </div>
