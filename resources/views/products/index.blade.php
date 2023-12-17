@@ -20,6 +20,9 @@
                     />
                 </div>
                 @endforeach
+                <span class="d-flex justify-content-center text-warning">
+                    <div class="text-warning">{{$products->links()}}</div>
+                </span>
             </div>
         </div>
     </div>

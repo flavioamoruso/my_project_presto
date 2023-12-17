@@ -11,7 +11,7 @@ class PubblicController extends Controller
 {
     public function homepage() {
         
-        $products=Product::take(4)->get()->sortByDesc('created_at');
+        $products=Product::take(3)->get()->sortByDesc('created_at');
         return view('welcome',
         compact('products'));
     }

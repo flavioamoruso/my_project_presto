@@ -8,6 +8,6 @@
     <p class="card-int__title mt-2">{{$product->title}}</p>
     <p class="excerpt">{{$product->body}}</p>
     <p class="card-footer">Inserito il {{$product->created_at->format('d/m/Y')}}</p>
-    <button class="card-int__button">Mostra</button>
+    <a class="text-decoration text-warning" href="{{route('products.show',compact('product'))}}"><button type="submit" class="card-int__button">Mostra</button></a>
   </div>
 </div>

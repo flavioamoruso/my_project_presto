@@ -5,6 +5,8 @@
 @import 'index.css';
 @import 'navbar.css';
 @import 'sfondo.css';
+@import 'category.css';
+@import 'show.css';
 
 :root{
     --textone:rgb(90, 121, 225);
@@ -41,6 +43,11 @@ h1,h2,h3,h4,h5{
 .p{
     font-family: 'Crete Round', serif;
     color: var(--four);
+}
+
+.p-2{
+    font-family: 'Crete Round', serif;
+    color: white;
 }
 
 .p:hover{

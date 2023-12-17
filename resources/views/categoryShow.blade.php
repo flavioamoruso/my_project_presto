@@ -1,13 +1,13 @@
 <x-layout>
-    <div class="background mt-3">
-    <div class="container-fluid myhead">
+    <div class="background bg-dark">
+    <div class="container-fluid myhead vh">
         <div class="row h-100 align-items-center text-center">
             <div class="col-12">
                 <h1 class="title-show">Esplora la categoria "{{$category->name}}"</h1>
             </div>
         </div>
     </div>
-    
+    </div>
     
     <div class="container mt-3">
         <div class="row justify-content-around text-center">
@@ -17,8 +17,8 @@
                     </div>
                         @empty
                         <div class="col-12">
-                            <p>Non sono presenti film per questa categoria</p>
-                            <p>Inseriscine uno : <a href="{{route('products.create')}}" class="btn btn-gradient">Nuovo annuncio</a> </p>
+                            <p class="p-2 h5">Non sono presenti film per questa categoria</p>
+                            <p class="p-2 h5">Inseriscine uno : <a href="{{route('products.create')}}" class="btn btn-gradient">Nuovo annuncio</a> </p>
                         </div>
                         @endforelse
         </div>

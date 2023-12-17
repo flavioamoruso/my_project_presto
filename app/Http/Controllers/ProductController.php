@@ -23,7 +23,7 @@ class ProductController extends Controller
     {
 
 
-        $products=Product::all();
+        $products=Product::paginate(6);
         return view('products.index',
         compact('products'));
     }
@@ -62,7 +62,8 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        //
+        return view('products.show',
+        compact('product'));
     }
 
     /**

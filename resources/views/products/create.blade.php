@@ -46,7 +46,7 @@
                         <label for="img">Inserisci immagine</label>
                         <input class="category-padding" type="file" name="img">
                     </div>
-                      <button class="sign my-4">Inserisci annunci</button>
+                      <button class="sign my-4">Invia</button>
                   </form>
               </div>
           </div>

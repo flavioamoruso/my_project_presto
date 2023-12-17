@@ -21,7 +21,7 @@
             </ul>
           </div>
           <li class="nav-item"><a class="nav-link p" href="">La nostra storia</a></li>
-          <li class="nav-item"><a class="nav-link p" href="{{route('contactUs')}}">Collabora con noi</a></li>
+          <li class="nav-item"><a class="nav-link p" href="{{route('contactUs')}}">Contattaci</a></li>
           <li class="nav-item"><a class="nav-link p" href="{{route('products.index')}}">Tutti i film</a></li>
           @guest
           <li class="nav-item p"><a class="nav-link text-warning" href="{{route('login')}}">Accedi</a></li>
@@ -37,7 +37,7 @@
                 <li><a class="dropdown-item" href="{{route('products.create')}}">Inserisci film</a></li>
                 <li><form action="{{route('logout')}}" method="POST">
                   @csrf
-                  <li><a class="dropdown-item" href="">Logout</a></li>
+                 <li><a class="dropdown-item" href=""><button type="submit" class="nav-link text-white">Logout</button></a></li>
                 </form></li>
               </ul>
             </li>

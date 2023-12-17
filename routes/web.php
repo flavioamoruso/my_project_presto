@@ -26,3 +26,5 @@ Route::get('/products/create',[ProductController::class,'create'])->name('produc
 Route::post('/products/store',[ProductController::class,'store'])->name('products.store');
 
 Route::get('/categoria/{category}',[PubblicController::class,'categoryShow'])->name('categoryShow');
+
+Route::get('/products/show/{product}',[ProductController::class,'show'])->name('products.show');
