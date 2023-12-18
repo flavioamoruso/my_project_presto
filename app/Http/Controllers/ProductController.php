@@ -49,6 +49,7 @@ class ProductController extends Controller
             'title'=>$request->title,
             'price'=>$request->price,
             'body'=>$request->body,
+            'img'=>$request->file('img')->store('public/img'),
             'user_id'=>Auth::id(),
             'category_id'=>$request->category
         ]);

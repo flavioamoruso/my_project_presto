@@ -22,7 +22,7 @@
           <div class="col-12 d-flex justify-content-center mt-5">
               <div class="form-container p-3 my-5">
                   <h3 class="title">Inserisci film</h3>
-                  <form class="form" method="POST" action="{{route('products.store')}}">
+                  <form class="form" method="POST" action="{{route('products.store')}}" enctype="multipart/form-data">
                       @csrf
                       <div class="input-group">
                           <label for="title">Titolo</label>

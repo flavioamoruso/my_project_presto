@@ -2,7 +2,7 @@
     <div class="container-fluid sfondo-auth vh-100">
         <div class="row">
             <div class="col-12 d-flex justify-content-center mt-5">
-                <div class="form-container">
+                <div class="form-container mt-5">
                     <h3 class="title">Registrati</h3>
                     <form class="form" method="POST" action="{{route('register')}}">
                         @csrf
