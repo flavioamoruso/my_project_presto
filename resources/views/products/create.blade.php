@@ -1,7 +1,7 @@
 <x-layout>
 
 
-  <div class="sfondo-auth mb-0">
+  <div class="sfondo-auth mb-0 vh-100">
     <div class="container">
       <div class="row text-center">
         <div class="col-12">
@@ -17,10 +17,10 @@
       </div>
     </div>
 
-    <div class="container-fluid vh-100">
+    <div class="container-fluid sfondo-auth">
       <div class="row">
           <div class="col-12 d-flex justify-content-center mt-5">
-              <div class="form-container p-3">
+              <div class="form-container p-3 my-5">
                   <h3 class="title">Inserisci film</h3>
                   <form class="form" method="POST" action="{{route('products.store')}}">
                       @csrf

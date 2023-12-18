@@ -1,7 +1,7 @@
 <x-layout>
-  <div class="container-fluid header vh-100">
+  <div class="container-fluid header">
     <div class="row h-100 align-items-top text-center">
-      <div class="col-12">
+      <div class="col-12 mt-5 pt-5">
         <div class="d-flex justify-content-center">
           <button class="btn btn-gradient text-decoration mt-5"><a class="text-dark text-decoration" href="{{route('products.create')}}">
           Inserisci film</a></button>
@@ -11,13 +11,13 @@
     </div>
   </div>
   
-  <div class="container mt-5">
+  <div class="container">
     <div class="row justify-content-around text-center">
-      <div class="col-12">
+      <div class="col-12 mt-5">
         <h3>Film recenti</h3>
       </div>
         @foreach($products as $product)
-        <div class="col-10 col-md-3 my-3 mx-3">
+        <div class="col-10 col-md-3 my-3 mx-auto">
             <x-card
             
             :product="$product"

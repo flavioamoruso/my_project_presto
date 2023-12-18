@@ -2,7 +2,7 @@
     <div class="background bg-dark">
     <div class="container-fluid myhead vh">
         <div class="row h-100 align-items-center text-center">
-            <div class="col-12">
+            <div class="col-12 mt-5 pt-5">
                 <h1 class="title-show">Esplora la categoria "{{$category->name}}"</h1>
             </div>
         </div>

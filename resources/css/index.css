@@ -1,5 +1,17 @@
 .header-index{
     height: 150px;
-  }
+}
+
+  .div-pagination{
+    height: 10vh;
+}
+
+
+.pagination{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   
   

@@ -1,4 +1,4 @@
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
     <div class="container px-4">
       <a class="navbar-brand" href="/">
         <span class="{{route('homepage')}}"><h3>Il Grande Cinema</h3></span>

@@ -2,7 +2,7 @@
     <div class="sfondo-index">
         <div class="container-fluid">
             <div class="row text-center justify-content-center">
-                <div class="col-12 mt-4">
+                <div class="col-12 mt-5 pt-5">
                     <h1 class="text-warning">Ecco tutti i film che vuoi!</h1>
                 </div>
             </div>
@@ -20,9 +20,12 @@
                     />
                 </div>
                 @endforeach
-                <span class="d-flex justify-content-center text-warning">
-                    <div class="text-warning">{{$products->links()}}</div>
-                </span>
+               
+                
+                
+            </div>
+            <div class="position-relative div-pagination">
+                {{$products->links()}}
             </div>
         </div>
     </div>

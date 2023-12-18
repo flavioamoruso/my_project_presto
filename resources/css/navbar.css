@@ -5,3 +5,8 @@
 .z-index{
     z-index: 9999;
 }
+
+.navbarScroll{
+    background-color: rgb(79, 83, 79) !important;
+    transition: 1.3s;
+}

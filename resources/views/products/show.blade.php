@@ -1,7 +1,7 @@
 <x-layout>
     <div class="container-fluid">
         <div class="row text-center">
-            <div class="col-12">
+            <div class="col-12 mt-5 pt-5">
                 <h1>Compra questo film</h1>
             </div>
         </div>
