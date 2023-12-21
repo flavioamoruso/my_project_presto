@@ -2,7 +2,7 @@
   <div class="card__corner"></div>
   <div class="card__img">
     <span class="card__span">{{$product->category->name}}</span>
-    <img src="{{Storage::url($product->img)}}" alt="card" class="img-fluid" width="165">
+    <img src="{{Storage::url($product->img)}}" alt="card" class="img-fluid" width="165" height="200">
   </div>
   <div class="card-int">
     <p class="card-int__title mt-3">{{$product->title}}</p>

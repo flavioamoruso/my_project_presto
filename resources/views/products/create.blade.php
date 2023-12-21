@@ -1,10 +1,9 @@
 <x-layout>
 
 
-  <div class="sfondo-auth mb-0 vh-100">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-12">
+    <div class="container-fluid mt-5">
+      <div class="row justify-content-center text-center">
+        <div class="col-6 mt-5 text-center pt-3">
           
           @if (session('message'))
           <div class="alert alert-warning">
@@ -14,33 +13,32 @@
           
           
         </div>
-      </div>
-    </div>
-
-    <div class="container-fluid sfondo-auth">
-      <div class="row">
-          <div class="col-12 d-flex justify-content-center mt-5">
-              <div class="form-container p-3 my-5">
+          <div class="col-12 d-flex justify-content-center">
+              <div class="form-container p-3">
                   <h3 class="title">Inserisci film</h3>
                   <form class="form" method="POST" action="{{route('products.store')}}" enctype="multipart/form-data">
                       @csrf
                       <div class="input-group">
                           <label for="title">Titolo</label>
                           <input type="text" name="title">
+                          @error('title') <span class="error text-danger">{{ $message }}</span> @enderror 
                       </div>
                       <div class="input-group">
                           <label for="price">Prezzo</label>
                           <input type="number" name="price">
+                          @error('price') <span class="error text-danger">{{ $message }}</span> @enderror 
                       </div>
                       <select class="form-select my-4 category-padding text-secondary" name="category" aria-label="Default select example">
                         <option selected>Categoria</option>
                         @foreach($categories as $category)
                         <option value="{{$category->id}}">{{$category->name}}</option>
+                        @error('category_id') <span class="error">{{ $message }}</span> @enderror 
                         @endforeach
                       </select>
                       <div class="mb-3">
                         <label for="floatingTextarea" class="text-white"><h6>Descrizione</h6></label>
                         <textarea name="body" class="form-control text-warning category-padding" placeholder=""></textarea>
+                        @error('body') <span class="error text-danger">{{ $message }}</span> @enderror 
                       </div>
                       <div class="input-group">
                         <label for="img">Inserisci immagine</label>
@@ -54,6 +52,7 @@
     </div>
 
   </div>
+</x-layout>
 
 
 
@@ -148,4 +147,3 @@
   </div> --}}
   
   
-</x-layout>

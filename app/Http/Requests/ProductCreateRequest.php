@@ -25,15 +25,17 @@ class ProductCreateRequest extends FormRequest
             'title'=>'required',
             'price'=>'required',
             'body'=>'required|min:5',
+            'category'=>'required',
         ];
     }
 
     public function messages(){
         return[
-            'name.required'=>'Il nome è obbligatorio',
+            'title.required'=>'Il nome è obbligatorio',
             'price.required'=>'Il prezzo è obbligatorio',
             'body.required'=>'La descrizione è obbligatoria',
-            'body.min'=>'La descrizione deve essere di 5 caratteri'
+            'body.min'=>'La descrizione deve essere di 5 caratteri',
+            'category.required'=>'La categoria è obbligatoria'
         ];
     }
 }

@@ -25,6 +25,15 @@ class PubblicController extends Controller
         return view('categoryShow',
         compact('category'));
     }
+
+    public function searchProducts(Request $request){
+        
+        $products=Product::search($request->searched)->paginate(10);
+
+        // $products=Product::search($request->searched)->where('is_accepted',true)->paginate(10);
+
+        return view('Products.index',compact('products'));
+    }
     
     
     

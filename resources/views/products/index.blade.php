@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="sfondo-index vh-100">
+    <div>
         <div class="container-fluid">
             <div class="row text-center justify-content-center">
                 <div class="col-12 mt-5 pt-5">
@@ -7,8 +7,7 @@
                 </div>
             </div>
         </div>
-        
-        
+                
         <div class="container">
             <div class="row justify-content-around text-center">
                 @forelse($products as $product)
@@ -22,19 +21,20 @@
                 @empty
                 <div class="col-12">
                     <div class="alert alert-custom">
-    
+                        
                         <p class="p-2 text-dark">Non sono presenti film in questo momento</p>
-    
+                        
                     </div>
                 </div>
                 @endforelse
-               
-                
-                
             </div>
-            <div class="position-relative div-pagination">
-                {{$products->links()}}
-            </div>
+            
+            
+            
         </div>
     </div>
+    <div class="d-flex justify-content-center">
+        {{$products->links()}}
+    </div>
+    
 </x-layout>
