@@ -6,6 +6,13 @@
             </div>
         </div>
     </div>
+    <div class="container-fluid mt-4">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center my-3">
+          <a href="{{route('products.edit',compact('product'))}}"><button class="btn btn-warning" type="submit">Modifica film</button></a>
+        </div>
+      </div>
+    </div>
     <div class="container mt-3">
         <div class="row justify-content-around text-center mx-auto">
             <div class="card">

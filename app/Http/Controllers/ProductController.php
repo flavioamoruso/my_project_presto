@@ -72,7 +72,8 @@ class ProductController extends Controller
      */
     public function edit(Product $product)
     {
-        //
+        return view('products.edit',
+        compact('product'));
     }
 
     /**
@@ -80,7 +81,24 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-        //
+        if($request->file('img')){
+            $img=$request->file('img')->store('public/img');
+
+        }else{
+            $img=$product->img;
+
+        }
+
+        $product->update([
+            'title'=>$request->title,
+            'price'=>$request->price,
+            'body'=>$request->body,
+            'img'=>$img,
+            'user_id'=>Auth::id(),
+            'category_id'=>$request->category
+        ]);
+
+        return redirect(route('products.edit',compact('product')))->with('message','Complimenti hai modificato un film');
     }
 
     /**

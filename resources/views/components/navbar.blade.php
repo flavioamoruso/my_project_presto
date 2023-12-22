@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar">
   <div class="container-fluid">
-    <a class="navbar-brand p" href="{{route('homepage')}}">Il Grande Cinema</a>
+    <a class="navbar-brand pp" href="{{route('homepage')}}">Il Grande Cinema</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -17,10 +17,10 @@
         </li>
         @guest
         <li class="nav-item">
-          <a class="nav-link p" href="{{route('login')}}">Accedi</a>
+          <a class="nav-link p text-dark" href="{{route('login')}}">Accedi</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link p" href="{{route('register')}}">Registrati</a>
+          <a class="nav-link p text-dark" href="{{route('register')}}">Registrati</a>
         </li>
         @endguest
         @auth
@@ -51,7 +51,7 @@
       </ul>
       <form action="{{route('products.search')}}" method="GET" class="d-flex">
         <input name="searched" class="form-control me-2" type="search" placeholder="Cerca film" aria-label="Search">
-        <button class="btn btn-warning" type="submit">Cerca</button>
+        <button class="btn btn-gradient" type="submit">Cerca</button>
       </form>
     </div>
   </div>
