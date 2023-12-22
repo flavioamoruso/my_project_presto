@@ -17,8 +17,8 @@
                     </div>
                         @empty
                         <div class="col-12">
-                            <p class="p-2 h5">Non sono presenti film per questa categoria</p>
-                            <p class="p-2 h5">Inseriscine uno : <a href="{{route('products.create')}}" class="btn btn-gradient">Nuovo annuncio</a> </p>
+                            <p class="pp h5">Non sono presenti film per questa categoria</p>
+                            <p class="pp h5">Inseriscine uno : <a href="{{route('products.create')}}" class="btn btn-gradient">Nuovo annuncio</a> </p>
                         </div>
                         @endforelse
         </div>

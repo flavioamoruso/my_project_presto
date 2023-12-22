@@ -34,3 +34,5 @@ Route::get('/categoria/{category}',[PubblicController::class,'categoryShow'])->n
 Route::get('/products/show/{product}',[ProductController::class,'show'])->name('products.show');
 
 Route::get('/ricerca/film',[PubblicController::class,'searchProducts'])->name('products.search');
+
+

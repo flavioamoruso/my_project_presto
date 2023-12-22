@@ -34,6 +34,8 @@ class PubblicController extends Controller
 
         return view('Products.index',compact('products'));
     }
+
+
     
     
     
