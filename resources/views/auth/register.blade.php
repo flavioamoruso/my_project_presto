@@ -24,8 +24,8 @@
                         </div>
                         <button class="sign my-4">Sign in</button>
                     </form>
-                    <p class="signup">Don't have an account?
-                        <a rel="noopener noreferrer" href="#" class="">Sign up</a>
+                    <p class="signup">Hai gia un account?
+                        <a rel="" href="{{route('login')}}" class="">Accedi</a>
                     </p>
                 </div>
             </div>

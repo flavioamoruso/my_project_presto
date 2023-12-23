@@ -20,8 +20,8 @@
                     </div>
                     <button class="sign">Sign in</button>
                 </form>
-                <p class="signup">Don't have an account?
-                    <a rel="noopener noreferrer" href="#" class="">Sign up</a>
+                <p class="signup">Non hai un account?
+                    <a rel="noopener noreferrer" href="{{route('register')}}" class="">Registrati</a>
                 </p>
             </div>
         </div>
