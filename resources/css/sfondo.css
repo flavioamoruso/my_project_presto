@@ -1,12 +1,12 @@
 .sfondo-auth{
-    background: url(/public/img/sfondo.jpg);
+    background:linear-gradient(transparent,rgb(33, 37, 41)),url(/public/img/sfondo.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.sfondo-index{
+/* .sfondo-index{
     background: url(/public/img/sfondo2.jpg);
     background-position: center;
     background-size: cover;
-}
+} */
