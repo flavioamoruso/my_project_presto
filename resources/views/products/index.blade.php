@@ -7,6 +7,19 @@
                 </div>
             </div>
         </div>
+
+        <div class="container-fluid mt-2">
+            <div class="row justify-content-center text-center">
+              <div class="col-6 mt-5 text-center pt-3">
+                
+                @if (session('message'))
+                <div class="alert alert-warning">
+                  {{ session('message') }}
+                </div>
+                @endif
+              </div>
+            </div>
+        </div>
                 
         <div class="container">
             <div class="row justify-content-around text-center">

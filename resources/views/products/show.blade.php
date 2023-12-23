@@ -12,8 +12,12 @@
           <a href="{{route('products.edit',compact('product'))}}"><button class="btn btn-warning" type="submit">Modifica film</button></a>
         </div>
         <div class="col-6">
+        <form method="POST" action="{{route('products.delete',compact('product'))}}">
+          @csrf
+          @method('DELETE')
           <a href=""><button class="btn btn-danger" type="submit">Elimina film</button></a>
-        </div>
+        </form>
+      </div>
       </div>
     </div>
     <div class="container mt-3">

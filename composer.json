@@ -12,6 +12,7 @@
         "laravel/sanctum": "^3.3",
         "laravel/scout": "^10.6",
         "laravel/tinker": "^2.8",
+        "outhebox/blade-flags": "^1.2",
         "teamtnt/laravel-scout-tntsearch-driver": "^13.2"
     },
     "require-dev": {
